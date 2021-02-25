@@ -12,10 +12,12 @@ options=(zipman)
 install=dwm.install
 source=(http://dl.suckless.org/$pkgname/$pkgname-$pkgver.tar.gz
 	dwm-tilegap-6.2.diff
+	dwm-notitlecolor-6.2.diff
 	config.h
 	dwm.desktop)
 sha256sums=('97902e2e007aaeaa3c6e3bed1f81785b817b7413947f1db1d3b62b8da4cd110e'
             '3eda10df758642314881d38e9b5feb23aa58e75d64a322460529402c874d0c64'
+            'cfd573e25601a91c4c44e642fd0cf24d38105bccca2b6734754b2d76713ac92d'
             'f495dfb5d3b73a93e33100acc216f0c3dbc21ae52674968c362a0ac3c9fbe6f7'
             'bc36426772e1471d6dd8c8aed91f288e16949e3463a9933fee6390ee0ccd3f81')
 
