@@ -62,6 +62,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *lockcmd[]  = { "loginctl", "lock-session", NULL };
+static const char *surfcmd[]  = { "surf", NULL };
 static const char *brightnessinc[] = { "brightness", "increase", NULL };
 static const char *brightnessdec[] = { "brightness", "decrease", NULL };
 
@@ -70,6 +71,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ WINKEY,			XK_l,	   spawn,	   {.v = lockcmd } },
+        { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = surfcmd } },
         { 0,                            XF86XK_MonBrightnessUp, spawn, {.v = brightnessinc } },
         { 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdec } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
